@@ -88,7 +88,7 @@ let setting = JSON.parse(fs.readFileSync('./setting.json'))
 owner = setting.owner
 gamewaktu = setting.gamewaktu
 petik = '```'
-fake = '©ItsMeBotz'//GANTI NAMA KAMU BEP
+fake = '©Arya4Me'//GANTI NAMA KAMU BEP
 ban =[]
 
 // Database
@@ -799,7 +799,7 @@ function banChat() {
        case 'donasi':
                txtt =`*Hai Kak* ${pushname} *Yang Baik*\n*Mau donasi?* Dikasih Syukur, Gak jadi Gpp :)`
 
-               buttons = [{buttonId: '!gopay',buttonText:{displayText: 'GOOPAY'},type:1},{buttonId:'!pulsa',buttonText:{displayText:'PULSA'},type:1}]
+               buttons = [{buttonId: '!gopay',buttonText:{displayText: 'GOPAY'},type:1},{buttonId:'!pulsa',buttonText:{displayText:'DANA'},type:1}]
 
                buttonsMessage = {
                contentText: `${txtt}`,
@@ -844,15 +844,15 @@ dha.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
 
         case 'menu':
         case 'help':
-        menu =`༒ *INFO USER* ༒
+        menu =` *INFO USER* 
 ᱝ *Nama :* ${pushname}
 ᱝ *Nomor :* @${sender.split('@')[0]}
 ᱝ *Status :* ${isOwner ? 'OWNER' : isPremium ? 'Premium' : 'Tidak Terdeteksi'}
 ᱝ *Baterai :* ${baterai}% 
 
 ༒ *INFO BOT* ༒
-ᱝ *Nama : *ItsMeBotz*
-ᱝ *Nomor :* @6283146208804 (pembuat)
+ᱝ *Nama : *Arya4Me*
+ᱝ *Nomor :* @6289516833542 (pembuat)
 ᱝ *Owner : *Herman* 
 ᱝ *Aiktif :*  ${runtime(process.uptime())}
 ᱝ *Prefix :* 『> ${prefix} <』
@@ -871,7 +871,7 @@ dha.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
 ᱝ *User :* ${pushname}
 
 *Request fitur?* Ketik ${prefix}owner Ya!
-*Sewa bot?* Chat wa.me/6283146208804`
+*Sewa bot?* Chat wa.me/6289516833542`
                buttons = [{buttonId: `${prefix}command`,buttonText:{displayText: 'SEMUAH FITUR😈'},type:1},{buttonId: `${prefix}vn`,buttonText:{displayText: 'MENU VN🗣️'},type:1},{buttonId:`${prefix}donasi`,buttonText:{displayText:'SEDEKAH🤡'},type:1}]
 
                imageMsg = (await dha.prepareMessageMedia(fs.readFileSync(`./media/sherlynn.jpg`), 'imageMessage', {thumbnail: fs.readFileSync(`./media/sherlynn.jpg`)})).imageMessage
@@ -1550,10 +1550,9 @@ break
 case 'bayar':
 gopeynya = 'https://i.ibb.co/kynNYTh/ganteng.jpg'
 teksnya = `*[ PAYMENT ]*
-*Gopay :* 083840290711
-*Dana :* 083146208804
-*Ovo :* 083146208804
-*[ Hêrmåñ ßð†z ]*`
+*Gopay :* 089516833542
+*Dana :* 089516833542
+*[ Arya4Me ßð†z ]*`
         dha.sendMessage(from, await getBuffer(gopeynya), image, {quoted: ftoko, caption: teksnya })
               break
  
@@ -1611,7 +1610,6 @@ case 'buttongame':
               gopeynya = 'https://i.ibb.co/kynNYTh/ganteng.jpg'
               teksnya = `*「GAME MENU」*
 *Ketik ${prefix}owner, Untuk Request Fitur*
-ItsMeBotz
 
 き⃟🦈 ${prefix}limitgame*
 *き⃟🦈 ${prefix}slot*
@@ -1728,93 +1726,7 @@ ItsMeBotz
 *き⃟🦈 ${prefix}chat* _nomor|teks_`
               dha.sendMessage(from, await getBuffer(gopeynya), image, {quoted: ftext, caption: teksnya })
               break
-case 'pricegtivd':
-              gopeynya = 'https://i.ibb.co/kynNYTh/ganteng.jpg'
-              teksnya = `*Price Role GTIVD*
-*Link Grup :* https://chat.whatsapp.com/I2yoiNRMkJD8rzOFtD2onA
 
-VIP       : *40 World Locks*
-Mod     : *70 World Locks*
-Admin : *150 World Locks*
-Divine  : *200 World Locks*
-Owner  : *3 Diamond Locks*
-
-*Order Role? Chat Owner :*
-*iVend :* wa.me/6283146208804`
-              dha.sendMessage(from, await getBuffer(gopeynya), image, {quoted: ftoko, caption: teksnya })
-              break
-case 'pricegtli':
-              gopeynya = 'https://i.ibb.co/kynNYTh/ganteng.jpg'
-              teksnya = `Welcome, Price Role GTLI*
-*Link Grup : https://chat.whatsapp.com/L9HTjy9FBJIBm3SfQS1pE5
-
-*Not Unli Role :*
-Devil       : *50 World Locks*
-Mod     : *100 World Locks*
-
-*Unlimited Role :*
-Admin : *150 World Locks*
-Owner  : *225 World Locks*
-King  : *250 World Locks*
-God : *300 World Locks*
-Community : *375 World Locks*
-Corupted : *400 World Locks*
-Manager : *450 World Locks*
-Developer : *500 World Locks*
-Leviathan : *550 World Locks*
-Founder : *600 World Locks*
-Police : *675 World Locks*
-
-*Custom Role :*
-C Role Not Unli : *300 World Locks*
-C Role Unli : *600 World Locks*
-
-*Order Role? Bisa pake Goopay!*
-*Chat Owner :* wa.me/6283146208804`
-              dha.sendMessage(from, await getBuffer(gopeynya), image, {quoted: ftoko, caption: teksnya })
-              break
-case 'pricegtfo':
-              gopeynya = 'https://i.ibb.co/kynNYTh/ganteng.jpg'
-              teksnya = `*Price Role GTFO*
-*Link Grup : https://chat.whatsapp.com/L9HTjy9FBJIBm3SfQS1pE5
-
-Mod     : *80 World Locks*
-Admin : *150 World Locks*
-Divine  : *200 World Locks*
-Legend  : *3 Diamond Locks*
-Manager  : *4 Diamond Locks*
-Owner  : *7 Diamond Locks*
-
-*Order Role? Chat Owner :*
-*UFO GTFO :* wa.me/623146208804`
-              dha.sendMessage(from, await getBuffer(gopeynya), image, {quoted: ftoko, caption: teksnya })
-              break
-case 'ruleswave':
-              gopeynya = 'https://i.ibb.co/kynNYTh/ganteng.jpg'
-              teksnya = `*_Welcome To WAVEㅤFMLY!_*
-*Rules* (Peraturan) :
-
-*Usia Umur 13+!!*
-*Good Atitude!!*
-*Toxic boleh, tapi sewajarnya!!*
-*Batas CN 2/3Minggu!!*
-*KD Min 1.00+*
-*Menghargai 1 Sama Lain*
-*Jangan Kirim/Send Yang Berbau Porno(18+)*
-*Untuk selengkapnya open Member bisa hubungin Kapten(Alip)*
-*Wajib Nge team tour!!*
-*No Sparing Guild!!*
-
-*Saran CN :* WAVEㅤ(NAMA)
-*WAJIB PUSH DT 1ORANG 100DT!!*
-*HARUS PUNYA BUKTI SS,KALO UDAH SAMPAI 100DT!!*
-*3HARI GA ON KICK!!*
-
-*ID Guild :* -
-*Minat Join? Chat* wa.me/683146208804
-#WAVEFOREVER!`
-              dha.sendMessage(from, await getBuffer(gopeynya), image, {quoted: ftoko, caption: teksnya })
-              break
 			
                                                                                                                         
 //------------------< Sticker Cmd >-------------------
@@ -3436,9 +3348,6 @@ break
       case 'runtime':
               textImg(`${runtime(process.uptime())}`)
               break
-       case 'youtube': 
-              reply(`*Subcribe YT Owner :*\n https://youtube.com/channel/UCPhU6uA_3gUaEvyrFZFgJqg`)
-              break
        case 'masukandata':
              reply(`*「BOT MELAYANI」*\n\n━━━━━━━━━━━━━━━━━━━━\n\nMASUKKANA DATA BERIKUT\n*•NAMA GAME:*\n*•ID GAME:*\n*•USER NAME:*\n━━━━━━━━━━━━━━━━━━━━\n*NOTE:*\n*1.* _JANGAN LUPA BUKTI TRXNYA_\n*2.* _OTOMATIS PESANAN_\n_LANSUNG DI PROSES_\n*3.* _PESANAN ANDA DI PROSES_\n_OLEH_\n\n   *©HermanBot*\n\n_JIKA PESANAN ANDA LOW_\n_PROSES MOHON BERSABAR_\nwa.me/6283146208804`)
               break
@@ -4481,25 +4390,22 @@ case 'quotesdilan':
 					break                            
 //------------------< Menunya Bang:v >-------------------
       case 'dana':
-             reply(`DANA : 083146208804\n\n SAYA CUMAN BISA BILANG TERIMAKASIH ATAS KEMURAHAN HATI TUAN TELAH MEMBERIKAN KAMI BANTUAN.SEMOGA ALLAH MEMBALAS APA YG TUAN BERIKAN KE PADA SAYA`)
+             reply(`DANA : 089516833542\n\n SAYA CUMAN BISA BILANG TERIMAKASIH ATAS KEMURAHAN HATI TUAN TELAH MEMBERIKAN KAMI BANTUAN.SEMOGA ALLAH MEMBALAS APA YG TUAN BERIKAN KE PADA SAYA`)
              break
              case 'y':
-             reply(`JANGAN MELANGGAR YA ANJG🗿`)
+             reply(`JANGAN MELANGGAR YA🗿`)
              break
              case 't':
              reply(`BISMILAH BACA YASIN BUAT YANG MENINGGAL EH BUAT YANG KELUAR MAKSUDNYA 🤭`)
              break
            case 'gopay':
-             reply(` اتَّقوا النَّارَ ولو بشقِّ تمرةٍ ، فمن لم يجِدْ فبكلمةٍ طيِّبةٍ\n*“Jauhilah api neraka, walau hanya dengan bersedekah sebiji kurma (sedikit). Jika kamu tidak punya, maka bisa dengan kalimat thayyibah”* [HR. Bukhari 6539, Muslim 1016\n\n*Goopay :* 083840290711\n𝑀𝑎𝑘𝑎𝑠𝑖ℎ 𝑌𝑎 𝑌𝑔 𝑆𝑢𝑑𝑎ℎ 𝐷𝑜𝑛𝑎𝑠𝑖.`)
-             break  
-         case 'pulsa':
-             reply(` اتَّقوا النَّارَ ولو بشقِّ تمرةٍ ، فمن لم يجِدْ فبكلمةٍ طيِّبةٍ\n*“Jauhilah api neraka, walau hanya dengan bersedekah sebiji kurma (sedikit). Jika kamu tidak punya, maka bisa dengan kalimat thayyibah”* [HR. Bukhari 6539, Muslim 1016\n\n*Pulsa :* 083146208804\n𝑀𝑎𝑘𝑎𝑠𝑖ℎ 𝑌𝑎 𝑌𝑔 𝑆𝑢𝑑𝑎ℎ 𝐷𝑜𝑛𝑎𝑠𝑖.`)
-             break              
+             reply(` اتَّقوا النَّارَ ولو بشقِّ تمرةٍ ، فمن لم يجِدْ فبكلمةٍ طيِّبةٍ\n*“Jauhilah api neraka, walau hanya dengan bersedekah sebiji kurma (sedikit). Jika kamu tidak punya, maka bisa dengan kalimat thayyibah”* [HR. Bukhari 6539, Muslim 1016\n\n*Gopay :* 089516833542\n𝑀𝑎𝑘𝑎𝑠𝑖ℎ 𝑌𝑎 𝑌𝑔 𝑆𝑢𝑑𝑎ℎ 𝐷𝑜𝑛𝑎𝑠𝑖.`)
+             break               
       case 'infoig':
-             reply(`Follow Instagram Owner Ya : https://instagram.com/cal_me_herman?utm_medium=copy_link`)
+             reply(`Follow Instagram Owner Ya : https://instagram.com/pin.nation_?utm_medium=copy_link`)
              break
       case 'grupbot':
-             reply('https://chat.whatsapp.com/L9HTjy9FBJIBm3SfQS1pE5')
+             reply('https://chat.whatsapp.com/Cg4AtPFfQ4kDuhXLnCfcpA')
              break
       case 'ownermenu':
              dha.sendMessage(from, ownerMenu(prefix), MessageType.text, {quoted: troli})
@@ -4548,18 +4454,6 @@ case 'quotesdilan':
              break
       case 'groupmenu': 
       case 'grupmenu': 
-             dha.sendMessage(from, groupMenu(prefix), MessageType.text, {quoted: troli})
-             break
-      case 'pricegtivd': 
-             dha.sendMessage(from, groupMenu(prefix), MessageType.text, {quoted: troli})
-             break
-      case 'rolegtli': 
-             dha.sendMessage(from, groupMenu(prefix), MessageType.text, {quoted: troli})
-             break
-      case 'rolegtivd': 
-             dha.sendMessage(from, groupMenu(prefix), MessageType.text, {quoted: troli})
-             break
-      case 'pricegtli': 
              dha.sendMessage(from, groupMenu(prefix), MessageType.text, {quoted: troli})
              break
       case 'funmenu':
@@ -4792,14 +4686,14 @@ reply('_' + err + '_\n\n' + js)
                   }
 
 
-       if (budy.includes(`@6283146208804`)) {
+       if (budy.includes(`@6289516833542`)) {
 const baby = fs.readFileSync('./sticker/ivend.webp');
 dha.sendMessage(from, baby, MessageType.sticker, {quoted: mek})
 
                   }
 
 
-       if (budy.includes(`@6283146208804`)) {
+       if (budy.includes(`@6289516833542`)) {
 const rell = fs.readFileSync('./sticker/rutzbot.webp');
 dha.sendMessage(from, rell, MessageType.sticker, {quoted: mek})
 
@@ -4822,7 +4716,7 @@ dha.sendMessage(from, rell, MessageType.sticker, {quoted: mek})
 
 		if (budy.includes(`P`)) {
 
-                  reply(`Pa pe pa pe, Salam gblk`)
+                  reply(`Pa pe pa pe, Salam Lah`)
 
                   }
 
@@ -4864,28 +4758,28 @@ dha.sendMessage(from, rell, MessageType.sticker, {quoted: mek})
 
 		if (budy.includes(`jembut`)) {
 
-                  reply(`_Jangan Toxic anj_`)
+                  reply(`_Jangan Toxic_`)
 
                   }
 
 
 		if (budy.includes(`kontol`)) {
 
-                  reply(`_Jangan Toxic anj_`)
+                  reply(`_Jangan Toxic_`)
 
                   }
 
 
 		if (budy.includes(`anj`)) {
 
-                  reply(`_Jangan Toxic anj_`)
+                  reply(`_Jangan Toxic_`)
 
                   }
 
 
 		if (budy.includes(`Anjg`)) {
 
-                  reply(`_Jangan Toxic anj_`)
+                  reply(`_Jangan Toxic_`)
 
                   }
 
