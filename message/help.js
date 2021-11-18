@@ -224,13 +224,12 @@ KELEBIHAN BOTZ
 LIST HARGA SEWA BOTZ
 ▢ PERHARI 2K
 ▢ PERMINGGU 5K
-▢ PERBULAN 15K
-▢ PERMANEN 40K
+▢ PERBULAN 25K
 MINAT HIBUNGI OWNER
-wa.me/6283146208804
+wa.me/6289516833542
 
 KUMPUL DISNI BUAT PEMULA BOT
-https://chat.whatsapp.com/L9HTjy9FBJIBm3SfQS1pE5`
+https://chat.whatsapp.com/Cg4AtPFfQ4kDuhXLnCfcpA`
 }
 exports.infoMenu = (prefix) => {
 return `
@@ -351,7 +350,7 @@ return`
 
 
 NOTE:
-_ANAK DI BAWAH UMUR 18 TAHUN JANGAN GUNAKAN FITUR INI NANTI LU SANGE🗿_
+_ANAK DI BAWAH UMUR 18 TAHUN JANGAN GUNAKAN FITUR INI_
 `}
 exports.soundMenu = (prefix) => {
 return`
@@ -429,7 +428,7 @@ return`
 
 `}
 exports.allMenu = (prefix, cmhit, runtime, pushname, isOwner, isPremium, gcount, sender, baterai) => {
-    return `━━━━━『DHA BOTZ』━━━━━
+    return `━━━━━『Arya4Me BOTZ』━━━━━
 
 𝗜𝗡𝗙𝗢 𝗣𝗘𝗡𝗚𝗚𝗨𝗡𝗔 𝗕𝗢𝗧
 ❏ NAMA : *${pushname}*
@@ -439,8 +438,7 @@ exports.allMenu = (prefix, cmhit, runtime, pushname, isOwner, isPremium, gcount,
 
 𝗜𝗡𝗙𝗢 𝗕𝗢𝗧
 ❏ NAMA : *DHA BOTZ*
-❏ API : @6282288265627
-❏ OWNER : *YUDHA PERDANA*
+❏ OWNER : *Arya*
 ❏ API : *@6282W87486762*
 ❏ TOTAL HIT : *${cmhit.length}x HIT*
 ❏ AKTIF : *${runtime(process.uptime())}*
