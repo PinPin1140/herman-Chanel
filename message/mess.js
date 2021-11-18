@@ -1,17 +1,17 @@
 module.exports.mess = {
-	        wait: 'PROSES...',
-			success: 'NI HASILNYA KAK',
-			wrongFormat: 'Format salah, coba liat lagi di menu',
+	        wait: 'P R O C E S S',
+			success: 'S U C C E S S',
+			wrongFormat: 'FORMAT SALAH, SILAHKAN CHECK DI MENU',
 			error: {
 				api: 'APINYA HABIS BRO ISI ULANG DULU',
-				stick: 'ITU BUKAN STIKER TOLOL',
-				Iv: 'JANGAN NGASIH LINK GAJE TOD'
+				stick: 'ITU BUKAN STIKER',
+				Iv: 'JANGAN NGASIH LINK GAJE'
 			},
 			only: {
-				group: 'KHUSUS GRUP BRO',
-				admin: 'KHUSUS ADMIN GRUP BRO',
-				premium: 'LU BUKAN MEMBER PREMIUM,BELI DULU SANA',
-				owner: 'KHUSUS OWNER BRO',
-				Badmin: 'BOT HARUS JADI ADMIN BRO',
+				group: 'ONLY GROUP USAGE',
+				admin: 'ONLY ADMIN GROUP USAGE',
+				premium: 'ONLY PREMIUM USER',
+				owner: 'ONLY Arya Can Use This Command',
+				Badmin: 'MAKE BOT ADMIN FIRST',
 			}
 		}
